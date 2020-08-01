@@ -1,7 +1,7 @@
 #!/bin/bash
 
 pushd "${WORKSPACE}/images"
-for unflipped in "${params.imgList}"; do
+for unflipped in ($@); do
     wget $unfliped
 done
 popd

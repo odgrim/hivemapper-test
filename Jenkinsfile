@@ -14,7 +14,7 @@ pipeline {
         }
         stage('pull') { 
             steps {
-               sh '${WORKSPACE}/pull.sh'
+               sh "${WORKSPACE}/pull.sh ${params.imgList}"
             }
         }
         stage('flip') { 
