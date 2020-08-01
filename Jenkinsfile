@@ -10,7 +10,7 @@ pipeline {
         }
         stage('pull') { 
             steps {
-               sh '${WORKSPACE}/
+               sh '${WORKSPACE}/pull.sh'
             }
         }
         stage('flip') { 
