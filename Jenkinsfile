@@ -24,7 +24,7 @@ pipeline {
         }
         stage('push') { 
             steps {
-                sh 'echo hi'
+                s3Upload(bucket:"hivemapper-tmp", path:"operations-quiz-34.220.210.119/", includePathPattern:"flipped/*"
             }
         }
     }
