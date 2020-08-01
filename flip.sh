@@ -1,3 +1,5 @@
 #!/bin/bash
 
-echo "hi"
+for $unflipped in ${WORKSPACE}/images/*; do
+    convert -flip "${WORKSPACE}/${unflipped}" "${WORKSPACE}/flipped/$(basename $unflipped)"
+done

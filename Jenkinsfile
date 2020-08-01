@@ -1,5 +1,9 @@
 pipeline {
     agent any 
+    parameters {
+         string(defaultValue:"https://i.imgur.com/n7bk8jC.jpg
+https://memegenerator.net/img/instances/67301987/work-work.jpg", description: "New line separated list of images", name: 'imgList')
+    }
     stages {
         stage('prepare') {
             steps {
