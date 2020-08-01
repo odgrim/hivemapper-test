@@ -1,0 +1,7 @@
+{
+"run_these": [
+{ "program_path": "/bin/date", "max_run_time_secs": 10 },
+{ "program_path": "/Users/briantorres/dev/interview/hivemapper_test/wait_forever.sh", "max_run_time_secs": 5 },
+{ "program_path": "/bin/date", "max_run_time_secs": 20 }
+]
+}
