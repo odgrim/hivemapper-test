@@ -24,7 +24,9 @@ pipeline {
         }
         stage('push') { 
             steps {
-                s3Upload(bucket:"hivemapper-tmp", path:"operations-quiz-34.220.210.119/", includePathPattern:"flipped/*"
+                withAWS(credentials:'hivemapper-profile') {
+                    s3Upload(bucket:"hivemapper-tmp", path:"operations-quiz-34.220.210.119/", includePathPattern:"flipped/*"
+                }
             }
         }
     }
